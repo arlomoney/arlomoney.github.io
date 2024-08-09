@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #1e1e1e, #252525);
+  color: #F5F3FF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.background-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  margin: 0;
+  color: #F5F3FF;
+  animation: slideIn 1s ease-in-out;
+  z-index: 1;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1em;
+  font-family: 'Montserrat', serif;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #F5F3FF;
+  animation: slideIn 1s ease-in-out;
+  z-index: 1;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.contact-pic {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.contact-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Styling */
+.content {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Main Content and Contact Container */
+main {
+  max-width: 45%;
+  border: 1px solid #424242;
+  background: transparent;
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.contact-container {
+  max-width: 45%;
+  border: 1px solid #424242;
+  background: transparent;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.name-pic, .name-pic1 {
+  margin: 20px auto;
+  padding: 20px auto;
+  width: 60%;
+}
+
+/* Links Box Styling */
+.links-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.links-box a img {
+  width: 32px;
+  height: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email a img {
+  width: 40px;
+  height: 27px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.links-box a img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Styling */
+nav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.01);
+  animation: fadeIn 2s ease-in-out;
+}
+
+ul {
+  font-size: 0.7em;
+  margin: 10px 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+li a {
+  color: #F5F3FF;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+/* Paragraph Styling */
+p {
+  margin-top: 30px;
+  line-height: 1.6;
+  font-size: 0.8em;
+  color: #E0E0E0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #F5F3FF;
+  background-color: #3d1f3b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #2D143B;
+  transform: scale(1.1);
+}
+
+/* Image Styling in Links */
+a img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header, main, nav {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  li a {
+    font-size: 1em;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic, .contact-pic {
+    margin-bottom: 20px;
+  }
+
+  .links-box {
+    border: 1px solid #424242;
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    flex-direction: column;
+  }
+}
+
+.project-container {
+  max-width: 60%;
+  border: 1px solid #424242;
+  background: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+.portfolio-pics {
+  max-width: 80%; 
+  border-radius: 5px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px auto;
+  display: block;
+}
+
+.portfolio-pics:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+h3 {
+  font-size: 0.8em;
+  font-family: 'Montserrat', serif;
+  font-weight: 100;
+  margin-top:10px;
+  margin-bottom: 30px;
+  color: #F5F3FF;
+  animation: slideIn 1s ease-in-out;
+  z-index: 1;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-family: 'Montserrat', serif;
+  font-weight: 100;
+  margin-top:10px;
+  margin-bottom: 20px;
+  color: #F5F3FF;
+  animation: slideIn 1s ease-in-out;
+  z-index: 1;
+}
+
+footer {
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.01);
+}
