@@ -253,90 +253,56 @@ a img:hover {
   }
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   header, main, nav {
-    width: 90%;
+    width: 100%;
+    padding: 10px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3, h4 {
+    font-size: 1em;
   }
 
   li a {
     font-size: 1em;
   }
 
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .profile-pic, .contact-pic {
     margin-bottom: 20px;
+    max-width: 100%; 
   }
 
   .links-box {
-    border: 1px solid #424242;
-    background: transparent;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 15px;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
   }
-}
 
-.project-container {
-  max-width: 60%;
-  border: 1px solid #424242;
-  background: transparent;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
-}
-.portfolio-pics {
-  max-width: 80%; 
-  border-radius: 5px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 15px auto;
-  display: block;
-}
+  .project-container {
+    max-width: 90%;
+    margin: 10px 0;
+  }
 
-.portfolio-pics:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-}
+  .portfolio-pics {
+    max-width: 90%;
+  }
 
-h3 {
-  font-size: 0.8em;
-  font-family: 'Montserrat', serif;
-  font-weight: 100;
-  margin-top:10px;
-  margin-bottom: 30px;
-  color: #F5F3FF;
-  animation: slideIn 1s ease-in-out;
-  z-index: 1;
-}
-
-h4 {
-  font-size: 0.8em;
-  font-family: 'Montserrat', serif;
-  font-weight: 100;
-  margin-top:10px;
-  margin-bottom: 20px;
-  color: #F5F3FF;
-  animation: slideIn 1s ease-in-out;
-  z-index: 1;
 }
 
 footer {
