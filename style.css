@@ -23,7 +23,7 @@ body {
 
 /* Header Styling */
 header {
-  background-image: url('Arlene Shergill.png');
+  /*background-image: url('Arlene Shergill.png');*/
   width: 100%;
   height: 100vh;
   max-width: 1200px;
