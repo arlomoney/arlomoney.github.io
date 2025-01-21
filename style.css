@@ -10,7 +10,8 @@
 
 /* Body Styling */
 body {
-  background: linear-gradient(135deg, #1e1e1e, #252525);
+  background: url('Arlene Shergill.png') no-repeat center center fixed;
+  background-size: cover;
   color: #F5F3FF;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
